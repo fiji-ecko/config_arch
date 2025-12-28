@@ -1,0 +1,123 @@
+{
+	"cpu": {
+		"format": " {usage:2}%",
+		"interval": 3,
+		"states": {
+			"warning": 70,
+			"critical": 90
+		},
+		"format-warning": " {usage:2}%",
+		"format-critical": " {usage:2}%",
+		"on-click": "kitty htop",
+		"tooltip": true,
+		"tooltip-format": "CPU: {usage}%\nTemp: {temperature}°C\nFreq: {avg_frequency} GHz"
+	},
+	"memory": {
+		"format": " {percentage:2}%",
+		"interval": 3,
+		"states": {
+			"warning": 70,
+			"critical": 90
+		},
+		"on-click": "kitty htop"
+	},
+	"custom/workspaces": {},
+
+
+	"clock": {
+		"format": " {:%H:%M}"
+	},
+	"network": {
+		"format": "{ifname}",
+		"format-wifi": "{icon}",
+		"format-ethernet": "󰌘",
+		"format-disconnected": "󰌙",
+		"tooltip-format": "{ipaddr}  {bandwidthUpBits}  {bandwidthDownBits}",
+		"format-linked": "󰈁 {ifname} (No IP)",
+		"tooltip-format-wifi": "{essid} | {icon} - {signalStrength}%",
+		"tooltip-format-ethernet": "{ifname} 󰌘",
+		"tooltip-format-disconnected": "󰌙 Disconnected",
+		"max-length": 30,
+		"format-icons": [
+			"󰤯", "󰤟", "󰤢", "󰤥", "󰤨"
+		]
+	},
+	"bluetooth": {
+		"format": " ",
+		"format-disable": "󰂳",
+		"format-connected": "󰂱",
+		"tooltip-format": " {device_alias}",
+		"tooltip-format-connected": "{device_enumerate}",
+		"tooltip-format-enumerate-connected": " {device_alias} 󰂄{device_battery_percentage}%",
+		"tooltip": true
+	},
+	"pulseaudio": {
+		"format": "{icon} {volume}%",
+		"format-bluetooth": "{icon} 󰂰 {volume}%",
+		"format-muted": "󰖁",
+		"format-icons": {
+			"headphone": " ",
+			"hands-free": " ",
+			"headset": " ",
+			"phone": " ",
+			"portable": " ",
+			"car": " ",
+			"default": [
+				"", " ", "󰕾 ", " "
+			],
+			"ignored-sinks": [
+				"Easy Effects Sink"
+			]
+		},
+		"scroll-step": 5.0
+	},
+	"battery": {
+		"interval": 3,
+		"align": 0,
+		"rotate": 0,
+		"full-at": 100,
+		"design-capacity": false,
+		"states": {
+			"good": 95,
+			"warning": 30,
+			"critical": 15
+		},
+		"format": "{icon} {capacity}%",
+		"format-charging": " {capacity}%",
+		"format-plugged": "󱘖 {capacity}%",
+		"format-alt-click": "click",
+		"format-full": "{icon} Full",
+		"format-alt": "{icon} {time}",
+		"format-icons": [
+			"󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"
+		],
+		"format-time": "{H}h {M}min"
+	},
+
+	"hyprland/workspaces": {
+        "on-click": "activate",
+        "format": "{icon}",
+        "format-icons": {
+            "default": "",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "active": "󱓻",
+            "urgent": "󱓻"
+        },
+        "persistent-workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": [],
+            "5": []
+        }
+	},
+	"tray": {}
+}

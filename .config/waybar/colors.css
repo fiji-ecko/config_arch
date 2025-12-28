@@ -1,0 +1,7 @@
+@define-color background #0e1415;
+
+@define-color buttons #0e1455;
+
+@define-color bk-cpu #46a112;
+@define-color cpu-warning #fab387;
+@define-color cpu-critical #f38ba8;

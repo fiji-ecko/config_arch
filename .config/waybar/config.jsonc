@@ -1,0 +1,14 @@
+{
+    "layer": "top",
+    "position": "top",
+    
+    "height": 55,
+    "spacing": 4, 
+
+	"modules-left": ["hyprland/workspaces", "tray"],
+    "modules-center": ["cpu", "memory", "custom/weather"],
+    "modules-right": ["bluetooth", "network", "pulseaudio", "battery", "clock"],
+
+    // import modules
+	"include": "modules.json"
+}

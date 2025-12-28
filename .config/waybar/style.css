@@ -1,0 +1,142 @@
+@import "colors.css";
+
+
+/* Main */
+
+* {
+	border: None;
+	border-radius: 0;
+	font-family: "JetBrainsMono Nerd Font";
+	font-weight: bold;
+	min-height: 0;
+	font-size: 16px;
+	font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
+}
+
+window#waybar {
+	background-color: #181825;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+
+
+/* Workspaces */
+
+#workspaces {
+	background-color: transparent;
+}
+#workspaces button {
+    all: initial;
+    min-width: 0;
+    box-shadow: inset 0 -3px transparent;
+    padding: 6px 18px;
+    margin: 6px 3px;
+    border-radius: 4px;
+    background-color: #1e1e2e;
+    color: #cdd6f4;
+}
+#workspaces button.active {
+	color: #1e1e2e;
+    background-color: #cdd6f4;	
+}
+#workspaces button:hover {  /* Наведение мышкой на кнопки */
+    box-shadow: inherit;
+    text-shadow: inherit;
+    color: #1e1e2e;
+    background-color: #cdd6f4;
+}
+#workspaces button.urgent {
+    background-color: #f38ba8;  /* Яркий цвет фона кнопки при событии */
+}
+
+
+/* Icon Processor */
+
+#cpu {
+	color: @foreground;
+	background-color: #46a112;
+    padding: 6px 18px;
+    margin: 6px 3px;
+    border-radius: 4px;
+}
+#cpu.warning {
+    color: #fab387;
+}
+#cpu.critical {
+    color: #f38ba8;
+	background-color: rgba(243, 139, 168, 0.2);
+}
+
+
+/* Icon Memory */
+
+#memory {
+	color: @foreground;
+	background-color: #185ca3;
+	padding: 6px 18px;
+    margin: 6px 3px;
+    border-radius: 4px;
+}
+#memory.warning {
+    color: #fab387;
+}
+#memory.critical {
+    color: #f38ba8;
+	background-color: rgba(243, 139, 168, 0.2);
+}
+
+
+/* Icon Bluetooth */
+
+#bluetooth {
+	color: @foreground;
+	background-color: #FF69B4;
+	padding: 6px 18px;
+    margin: 6px 3px;
+    border-radius: 4px;
+}
+
+
+/* Icon Network */
+
+#network {
+	color: @foreground;
+	background-color: #9932CC;
+	padding: 6px 18px;
+    margin: 6px 3px;
+    border-radius: 4px;
+}
+
+
+/* Icon Volume */
+
+#pulseaudio {
+	color: @foreground;
+	background-color: #FF1493;
+	padding: 6px 18px;
+    margin: 6px 3px;
+    border-radius: 4px;
+}
+
+
+/* Icon Battery */
+
+#battery {
+	color: @foreground;
+	background-color: #32CD22;
+	padding: 6px 18px;
+    margin: 6px 3px;
+    border-radius: 4px;
+}
+
+
+/* Icon Clock*/
+
+#clock {
+	color: @foreground;
+	background-color: #00BFFF;
+	padding: 6px 18px;
+    margin: 6px 3px;
+    border-radius: 4px;
+}
+
